@@ -9,10 +9,10 @@ void main() {
     statusBarColor: Colors.transparent,
   ));
 
-  runApp(MovieApp());
+  runApp(MovieDBApp());
 }
 
-class MovieApp extends StatelessWidget {
+class MovieDBApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
