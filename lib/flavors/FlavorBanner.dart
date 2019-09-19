@@ -15,6 +15,7 @@ class FlavorBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     if (FlavorConfig.isProduction()) return child;
     return Stack(
+      textDirection: TextDirection.ltr,
       children: <Widget>[
         child,
         _buildBanner(context),
@@ -31,8 +32,8 @@ class FlavorBanner extends StatelessWidget {
         child: CustomPaint(
           painter: BannerPainter(
             message: bannerConfig.bannerName,
-            textDirection: Directionality.of(context),
-            layoutDirection: Directionality.of(context),
+            textDirection: TextDirection.ltr,
+            layoutDirection: TextDirection.ltr,
             location: BannerLocation.topStart,
             color: bannerConfig.bannerColor,
           ),

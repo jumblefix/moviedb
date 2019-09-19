@@ -12,6 +12,7 @@ class MovieDBApp extends StatelessWidget {
       child: MultiProvider(
         providers: providers,
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             primarySwatch: Colors.yellow,
